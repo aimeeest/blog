@@ -11,11 +11,16 @@ export default {
 
     theme: {
         extend: {
+            colors: {
+                'darkpink': '#a85d72',
+                'lightpink': '#faebef',
+                'pink': '#edbbc4'
+            },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
         },
     },
 
-    plugins: [forms],
+    plugins: [forms, require('@tailwindcss/forms')],
 };
